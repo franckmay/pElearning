@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author Sadjang
  */
-public class Lesson {
+public class Lecon {
 
     private int id;
     private int id_chapitre;
@@ -20,7 +20,7 @@ public class Lesson {
     private String contenu;
     private String path;
 
-    public Lesson() {
+    public Lecon() {
     }
 
     public int getId() {

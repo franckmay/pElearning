@@ -1,5 +1,6 @@
 package core;
 
+import java.util.Date;
 import java.util.List;
 
 public class Cour {
@@ -8,5 +9,6 @@ public class Cour {
     private String nom;
     private String domaine;
     private String niveau;
-    private List<Lesson> Lesson;
+    private Date date;
+    private List<Lecon> Lesson;
 }

@@ -5,6 +5,7 @@ import java.util.Date;
 public class Chapitre {
 
     private int id;
+    private int id_cour;
     private String nom;
     private Date date;
 
@@ -13,6 +14,14 @@ public class Chapitre {
 
     public int getId() {
         return id;
+    }
+
+    public int getId_cour() {
+        return id_cour;
+    }
+
+    public void setId_cour(int id_cour) {
+        this.id_cour = id_cour;
     }
 
     public void setId(int id) {
