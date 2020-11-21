@@ -4,13 +4,14 @@
     <welcome-file-list>
         <welcome-file>Index</welcome-file>
     </welcome-file-list>   
+    
     <servlet>
         <servlet-name>Index</servlet-name>
         <servlet-class>main.Index</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
-        <url-pattern>/Index</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
