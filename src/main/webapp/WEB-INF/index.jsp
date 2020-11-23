@@ -1,16 +1,26 @@
 <%-- 
     Document   : index.jsp
     Created on : 21 nov. 2020, 14:48:16
-    Author     : Sadjang
+    Author     : franck
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
+
+
+<html lang="en">
+
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
         <title>JSP Page</title>
-        <link rel="stylesheet" href="ASSETS/bootstrap/css/bootstrap.min.css">
+        <base href="">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/newcss.css" rel="stylesheet" type="text/css">
 
     </head>
     <body>
@@ -18,7 +28,7 @@
 
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="Vesperr/index.html">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -54,9 +64,35 @@
         </nav>
 
 
+        <div class="container">
+            <!-- Content here -->
+            <div class="row">
+                <div class="editeur" id="editeur">
 
 
-        <script src="ASSETS/jquery/jquery.min.js"></script>
-        <script src="ASSETS/bootstrap/js/bootstrap.min.js"></script>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="assets/jquery/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/ckeditor/ckeditor.js"></script>
+        <script src="assets/ckeditor/ckeditor.js.map"></script>
+
+        <script>
+            ClassicEditor
+                    .create(document.querySelector('#editeur'))
+                    .then(editor => {
+                        console.log(editor);
+                    })
+                    .catch(error => {
+                        console.error(error);
+                    });
+        </script>
+
+
+
     </body>
 </html>
