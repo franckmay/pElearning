@@ -20,7 +20,10 @@
         <title>JSP Page</title>
         <base href="">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/newcss.css" rel="stylesheet" type="text/css">
+
+        <style> form{
+                margin-top: 50px;
+            }       </style>
 
     </head>
     <body>
@@ -64,17 +67,60 @@
         </nav>
 
 
+
+
+
+
+
+
         <div class="container">
             <!-- Content here -->
             <div class="row">
-                <div class="editeur" id="editeur">
+                <div>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="titre">Titre de la lecon</label>
+                                <input type="text" class="form-control" id="titre" placeholder="Titre de la lecon">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputState">Chapitre</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choisir...</option>
+                                    <option>...</option>
+                                    <option>...</option>
+                                </select>                            
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Description</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Brêve description de la lecon">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <textarea type="text" class="form-control" id="editeur"></textarea>
+                        </div>
 
+
+                        <div class="form-group row">
+                            <label for="exampleFormControlFile1" class="col-sm-4 col-form-label">Joindre un fichier Video</label>
+                            <div class="col-sm-8">
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                        </div>
+
+                      
+                        <button type="submit" class="btn btn-primary">Valider</button>
+                    </form>
 
                 </div>
             </div>
 
 
         </div>
+
+
+
 
         <script src="assets/jquery/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
